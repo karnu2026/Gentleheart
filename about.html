@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Gentle Heart Funeral Home</title>
+    <meta name="description" content="Learn about Gentle Heart Funeral Home's legacy of compassion, our values, and why families in Lilongwe, Malawi trust us with their loved ones.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== QUICK CONTACT BAR ===== -->
+    <div class="quick-contact" role="banner">
+        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+        24-Hour Emergency: <a href="tel:+265999344337">+265 999 344 337</a>
+        &nbsp;|&nbsp;
+        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+        <a href="tel:+265993989301">+265 993 989 301</a>
+        &nbsp;|&nbsp;
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+        <a href="mailto:gentle.heart@live.com">gentle.heart@live.com</a>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Go to Home">
+                <img src="logo.png" alt="Gentle Heart Funeral Home Logo" class="nav-logo-img">
+                <div class="nav-logo-text"> gentle heart
+                    <span>Funeral Home</span>
+                </div>
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem" class="">Home</a></li>
+                <li role="none"><a href="about.html" role="menuitem" class="active"arial-current="page">About Us</a></li>
+                <li role="none"><a href="services.html" role="menuitem" class="">Services</a></li>
+                <li role="none"><a href="products.html" role="menuitem" class="">Products</a></li>
+                <li role="none"><a href="contact.html" role="menuitem" class="">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main role="main">
+
+        <div class="about-hero">
+            <div>
+                <h1 id="about-title">About Gentle Heart</h1>
+                <p>A legacy of compassion and dignified service</p>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Story</h3>
+                <p>Founded with a simple mission: to provide families with compassionate, dignified, and personalized funeral services during their most challenging times.</p>
+                <p>What started as a small family-owned chapel has grown into a trusted institution, serving families across Malawi and around the world through our international repatriation services.</p>
+                <p>Throughout our history, we have remained committed to our founding principles—treating every family with the same care and respect we would want for our own loved ones.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/chapel.jpeg" alt="Gentle Heart Funeral Home chapel interior with warm lighting and elegant decor" loading="lazy">
+            </div>
+        </div>
+
+        <div style="background: var(--white); padding: 5rem 2rem;" aria-labelledby="values-heading">
+            <div class="section-header">
+                <h2 id="values-heading">Our Values</h2>
+                <p>The principles that guide everything we do</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-item">
+                    <i class="fas fa-hands-holding-heart" aria-hidden="true"></i>
+                    <h4>Compassion</h4>
+                    <p>We approach every family with genuine empathy and understanding.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-award" aria-hidden="true"></i>
+                    <h4>Excellence</h4>
+                    <p>Unwavering commitment to the highest standards of service.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                    <h4>Integrity</h4>
+                    <p>Honest, transparent guidance through every decision.</p>
+                </div>
+                <div class="value-item">
+                    <i class="fas fa-users" aria-hidden="true"></i>
+                    <h4>Respect</h4>
+                    <p>Honoring diverse traditions, beliefs, and personal wishes.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="values-section" aria-labelledby="values-heading">
+            <div class="section-header">
+                <h2 id="why-heading">Why Choose Us</h2>
+            </div>
+            <div class="cards-grid">
+                <div class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Experience &amp; Trust</h3>
+                    <p>Decades of expertise in funeral care, ensuring every detail is handled with professional precision and heartfelt care.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Dedicated Team</h3>
+                    <p>Our licensed funeral directors and support staff are available around the clock to provide guidance and assistance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Modern Facilities</h3>
+                    <p>Beautifully appointed chapels, reception halls, and preparation rooms designed for comfort and dignity.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="logo.png" alt="Gentle Heart Funeral Home">
+                <p>Guiding families through life's most difficult moments with grace, respect, and unwavering support.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Embalming</a></li>
+                    <li><a href="services.html">Hearse Services</a></li>
+                    <li><a href="services.html">Catering</a></li>
+                    <li><a href="services.html">Repatriation</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <div class="footer-contact">
+                    <p><i class="fas fa-phone-alt" aria-hidden="true"></i> <a href="tel:+265999344337">+265 999 344 337</a></p>
+                    <p><i class="fas fa-phone-alt" aria-hidden="true"></i> <a href="tel:+265993989301">+265 993 989 301</a></p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:gentle.heart@live.com">gentle.heart@live.com</a></p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Area 33, Plot 7, Off Mzimba Road, Lilongwe, Malawi</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Gentle Heart Funeral Home. All rights reserved. &nbsp;|&nbsp; Serving families with dignity, care &amp; compassion.
+        </div>
+    </footer>
+
+    <script>
+        /**
+         * Toggle mobile navigation menu
+         */
+        function toggleMobileMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            if (navLinks) {
+                const isActive = navLinks.classList.toggle('active');
+                if (menuBtn) {
+                    menuBtn.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+                }
+            }
+        }
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const navLinks = document.getElementById('navLinks');
+                if (navLinks && navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    const menuBtn = document.querySelector('.mobile-menu-btn');
+                    if (menuBtn) {
+                        menuBtn.setAttribute('aria-expanded', 'false');
+                    }
+                }
+            }
+        });
+
+
+    </script>
+</body>
+</html>

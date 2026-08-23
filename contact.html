@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Gentle Heart Funeral Home</title>
+    <meta name="description" content="Contact Gentle Heart Funeral Home in Lilongwe, Malawi. Available 24/7 for emergency services. Call +265 999 344 337 or email gentle.heart@live.com.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== QUICK CONTACT BAR ===== -->
+    <div class="quick-contact" role="banner">
+        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+        24-Hour Emergency: <a href="tel:+265999344337">+265 999 344 337</a>
+        &nbsp;|&nbsp;
+        <i class="fas fa-phone-alt" aria-hidden="true"></i>
+        <a href="tel:+265993989301">+265 993 989 301</a>
+        &nbsp;|&nbsp;
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+        <a href="mailto:gentle.heart@live.com">gentle.heart@live.com</a>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Go to Home">
+                <img src="logo.png" alt="Gentle Heart Funeral Home Logo" class="nav-logo-img">
+                <div class="nav-logo-text">
+                    <span>Funeral Home</span>
+                </div>
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            <ul class="nav-links" id="navLinks" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem" class="">Home</a></li>
+                <li role="none"><a href="about.html" role="menuitem" class="">About Us</a></li>
+                <li role="none"><a href="services.html" role="menuitem" class="">Services</a></li>
+                <li role="none"><a href="products.html" role="menuitem" class="">Products</a></li>
+                <li role="none"><a href="contact.html" role="menuitem" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main role="main">
+
+        <div class="contact-hero">
+            <div>
+                <h1 id="contact-title">Contact Us</h1>
+                <p>We're here to help, any time of day or night</p>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <p style="color: var(--charcoal-light); margin-bottom: 2rem; line-height: 1.8;">Whether you need immediate assistance or are planning ahead, our compassionate team is available around the clock to answer your questions and provide guidance.</p>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                    <div>
+                        <strong>24-Hour Emergency</strong>
+                        <p><a href="tel:+265999344337">+265 999 344 337</a></p>
+                        <p><a href="tel:+265993989301">+265 993 989 301</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <p><a href="mailto:gentle.heart@live.com">gentle.heart@live.com</a></p>
+                    </div>
+                </div>
+
+
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <div>
+                        <strong>Our Location</strong>
+                        <p>Area 33, Plot 7<br>Off Mzimba Road<br>Lilongwe, Malawi</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-clock" aria-hidden="true"></i>
+                    <div>
+                        <strong>Office Hours</strong>
+                        <p>Monday – Friday: 8:00 AM – 8:00 PM<br>Saturday – Sunday: 9:00 AM – 5:00 PM<br><em>Emergency services available 24/7</em></p>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.123456789012!2d33.773456789012!3d-13.984567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDU5JzA0LjQiUyAzM8KwNDYnMjUuMSJF!5e0!3m2!1sen!2smw!4v1700000000000" title="Map showing Gentle Heart Funeral Home location in Lilongwe, Malawi" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3 style="color: var(--burgundy); font-size: 1.5rem; margin-bottom: 1.5rem;">Send a Message</h3>
+                <form id="contactForm" onsubmit="handleFormSubmit(event)" novalidate>
+                    <div class="form-group">
+                        <label for="fullName">Your Name <span aria-hidden="true">*</span></label>
+                        <input type="text" id="fullName" placeholder="Full name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailAddress">Email Address <span aria-hidden="true">*</span></label>
+                        <input type="email" id="emailAddress" placeholder="email@example.com" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" placeholder="+265 999 344 337">
+                    </div>
+                    <div class="form-group">
+                        <label for="serviceNeeded">Service Needed</label>
+                        <select id="serviceNeeded">
+                            <option value="">Select a service...</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="immediate">Immediate Assistance</option>
+                            <option value="preplanning">Pre-Planning</option>
+                            <option value="repatriation">International Repatriation</option>
+                            <option value="products">Product Catalog</option>
+                            <option value="grief">Grief Support</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span aria-hidden="true">*</span></label>
+                        <textarea id="message" placeholder="How can we help you?" required aria-required="true"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="fileUpload">Attach File (Optional)</label>
+                        <input type="file" id="fileUpload" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx">
+                        <small style="color: var(--charcoal-light); display: block; margin-top: 0.25rem;">Supported files: Images, PDF, Word (Max 5MB)</small>
+                    </div>
+                    <button type="submit" class="btn btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="logo.png" alt="Gentle Heart Funeral Home">
+                <p>Guiding families through life's most difficult moments with grace, respect, and unwavering support.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Embalming</a></li>
+                    <li><a href="services.html">Hearse Services</a></li>
+                    <li><a href="services.html">Catering</a></li>
+                    <li><a href="services.html">Repatriation</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <div class="footer-contact">
+                    <p><i class="fas fa-phone-alt" aria-hidden="true"></i> <a href="tel:+265999344337">+265 999 344 337</a></p>
+                    <p><i class="fas fa-phone-alt" aria-hidden="true"></i> <a href="tel:+265993989301">+265 993 989 301</a></p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:gentle.heart@live.com">gentle.heart@live.com</a></p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Area 33, Plot 7, Off Mzimba Road, Lilongwe, Malawi</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Gentle Heart Funeral Home. All rights reserved. &nbsp;|&nbsp; Serving families with dignity, care &amp; compassion.
+        </div>
+    </footer>
+
+    <script>
+        /**
+         * Toggle mobile navigation menu
+         */
+        function toggleMobileMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            if (navLinks) {
+                const isActive = navLinks.classList.toggle('active');
+                if (menuBtn) {
+                    menuBtn.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+                }
+            }
+        }
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const navLinks = document.getElementById('navLinks');
+                if (navLinks && navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    const menuBtn = document.querySelector('.mobile-menu-btn');
+                    if (menuBtn) {
+                        menuBtn.setAttribute('aria-expanded', 'false');
+                    }
+                }
+            }
+        });
+
+        /**
+         * Handle form submission with Telegram API integration and file upload
+         * @param {Event} event - The form submit event
+         */
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+
+            const form = document.getElementById('contactForm');
+            const name = document.getElementById('fullName');
+            const email = document.getElementById('emailAddress');
+            const phone = document.getElementById('phoneNumber');
+            const message = document.getElementById('message');
+            const serviceSelect = document.getElementById('serviceNeeded');
+            const fileInput = document.getElementById('fileUpload');
+            const submitBtn = form.querySelector('button[type="submit"]');
+
+            // Simple validation
+            let isValid = true;
+            let errorMessage = '';
+
+            if (!name.value.trim()) {
+                isValid = false;
+                errorMessage += '• Please enter your full name.\n';
+                name.style.borderColor = '#d32f2f';
+            } else {
+                name.style.borderColor = '';
+            }
+
+            if (!email.value.trim() || !email.value.includes('@')) {
+                isValid = false;
+                errorMessage += '• Please enter a valid email address.\n';
+                email.style.borderColor = '#d32f2f';
+            } else {
+                email.style.borderColor = '';
+            }
+
+            if (!message.value.trim()) {
+                isValid = false;
+                errorMessage += '• Please enter your message.\n';
+                message.style.borderColor = '#d32f2f';
+            } else {
+                message.style.borderColor = '';
+            }
+
+            // File size validation (5MB max)
+            if (fileInput.files.length > 0) {
+                const file = fileInput.files[0];
+                if (file.size > 5 * 1024 * 1024) {
+                    isValid = false;
+                    errorMessage += '• File size must be less than 5MB.\n';
+                    fileInput.style.borderColor = '#d32f2f';
+                } else {
+                    fileInput.style.borderColor = '';
+                }
+            }
+
+            if (!isValid) {
+                alert('Please correct the following issues:\n\n' + errorMessage);
+                return;
+            }
+
+            // Telegram Bot Configuration
+            const TELEGRAM_BOT_TOKEN = '8624896822:AAFLkfQV5VV3D54MHhFrpR1a3jP2HvrSVnM';
+            const TELEGRAM_CHAT_ID = '8817528820';
+
+            const service = serviceSelect.options[serviceSelect.selectedIndex].text;
+            const phoneValue = phone.value.trim() || 'Not provided';
+
+            // Disable submit button
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            try {
+                // Prepare message text
+                const messageText = `<b>New Website Inquiry - Gentle Heart Funeral Home</b>\n\n` +
+                    `<b>Name:</b> ${escapeHtml(name.value.trim())}\n` +
+                    `<b>Email:</b> ${escapeHtml(email.value.trim())}\n` +
+                    `<b>Phone:</b> ${escapeHtml(phoneValue)}\n` +
+                    `<b>Service Needed:</b> ${escapeHtml(service || 'Not specified')}\n\n` +
+                    `<b>Message:</b>\n${escapeHtml(message.value.trim())}`;
+
+                // Send message to Telegram
+                const messageResponse = await fetch('https://api.telegram.org/bot' + TELEGRAM_BOT_TOKEN + '/sendMessage', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        chat_id: TELEGRAM_CHAT_ID,
+                        text: messageText,
+                        parse_mode: 'HTML'
+                    })
+                });
+
+                const messageData = await messageResponse.json();
+
+                if (!messageData.ok) {
+                    throw new Error(messageData.description || 'Failed to send message');
+                }
+
+                // Handle file upload if present
+                if (fileInput.files.length > 0) {
+                    const file = fileInput.files[0];
+                    const formData = new FormData();
+                    formData.append('chat_id', TELEGRAM_CHAT_ID);
+                    formData.append('document', file);
+                    formData.append('caption', `Attachment from ${name.value.trim()} - ${email.value.trim()}`);
+
+                    const fileResponse = await fetch('https://api.telegram.org/bot' + TELEGRAM_BOT_TOKEN + '/sendDocument', {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    const fileData = await fileResponse.json();
+
+                    if (!fileData.ok) {
+                        console.warn('File upload failed but message was sent:', fileData.description);
+                    }
+                }
+
+                // Success message
+                alert('Thank you for reaching out, ' + name.value.trim() + '.\n\nYour message has been sent. A member of our compassionate team will contact you shortly at ' + email.value.trim() + '.\n\nOur 24-hour emergency line is always available at +265 999 344 337.');
+                form.reset();
+
+            } catch (error) {
+                console.error('Error sending to Telegram:', error);
+                alert('Sorry, your message could not be sent right now. Please call us directly on +265 999 344 337 or email gentle.heart@live.com.');
+            } finally {
+                // Re-enable submit button
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+            }
+        }
+
+        /**
+         * Escape HTML special characters for Telegram HTML parse mode
+         * @param {string} str - Raw user input
+         * @returns {string} Escaped string
+         */
+        function escapeHtml(str) {
+            return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+
+        /**
+         * Display file name when file is selected (UI enhancement)
+         */
+        document.addEventListener('DOMContentLoaded', function() {
+            const fileInput = document.getElementById('fileUpload');
+            if (fileInput) {
+                fileInput.addEventListener('change', function() {
+                    if (this.files.length > 0) {
+                        const fileName = this.files[0].name;
+                        const fileSize = (this.files[0].size / 1024 / 1024).toFixed(2);
+                        const label = this.previousElementSibling;
+                        if (label) {
+                            label.textContent = `Attached: ${fileName} (${fileSize} MB)`;
+                        }
+                    } else {
+                        const label = this.previousElementSibling;
+                        if (label) {
+                            label.textContent = 'Attach File (Optional)';
+                        }
+                    }
+                });
+            }
+        });
+
+    </script>
+</body>
+</html>
